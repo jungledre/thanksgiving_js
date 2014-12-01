@@ -12,11 +12,21 @@ var zip = function(array, array2){
     return newerArray
 }
 
-var zipper = zip(artists, albums)
+var zip2 = function(array, array2){
+    var newArray = []
+    array.forEach(function(element, index){
+        newArray.push([element, array2[index]])
+    })
+    return newArray
+}
 
-console.log(zipper)
+var zip3 = function(array, array2){
+    return array.map(function(element, index){
+        return  [element, array2[index]]
+    })
+}
 
-// Try again with Map
+console.log(zip(artists, albums))
 
 // Output
 

@@ -12,5 +12,19 @@ var isPalindrome = function(string){
     }
 }
 
-isPalindrome('Hannah')
+var isPalindrome2 = function(string){
+    var newString = string.toLowerCase();
+    for (var i = newString.length - 1; i >= 0; i--) {
+        var j = newString.length - 1 - isPalindrome
+        if (newString.charAt(i) != newString.charAt(j)){
+            return false
+        }
+        else {
+            return true
+        }
+    }
+}
+
+console.log(isPalindrome2('Hannah'))
 isPalindrome('Racecar')
+isPalindrome('Hello')

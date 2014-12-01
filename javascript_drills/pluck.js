@@ -14,13 +14,19 @@ var pluck2 = function(array, key){
     return newArray
 }
 
+var pluck3 = function(array, key){
+    return array.map(function(element){
+        return element[key]
+    })
+}
+
 var albums = [
     {'name': 'Gossamer', 'artist': 'Passion Pit'},
     {'name': 'Sigh no more', 'artist': 'Mumford and Sons'},
     {'name': 'Time to Pretend', 'artist': 'MGMT'}
 ];
 
-var plucked = pluck(albums, 'artist')
+var plucked = pluck3(albums, 'artist')
 
 console.log(plucked);
 

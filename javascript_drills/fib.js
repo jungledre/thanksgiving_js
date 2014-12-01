@@ -12,4 +12,20 @@ var fib = function(n){
     return fibs
 }
 
-console.log(fib(10))
+var fib2 = function(n){
+    var fib = [0, 1]
+    for (var i = 2; i <= n-1; i++) {
+        fib[i] = fib[i-1] + fib[i-2]
+    }
+    return fib
+}
+
+var fib3 = function(n){
+    if (n <= 1){
+        return n;
+
+    }
+    return fib3(n-1) + fib3(n-2)
+}
+
+console.log(fib3(10))
