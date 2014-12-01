@@ -4,9 +4,9 @@ $(function(){
 
     $(document).on('keydown',function(event){
 
+    // toDo: Confine to ".shape"
 
-
-    if(event.keyCode == 37) { // left
+    if(event.keyCode == 37 && $('.shape').position().left >= 100) { // left
         $(".shape")
         .animate({left: "-=80"}, 'fast')
     }

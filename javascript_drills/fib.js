@@ -23,7 +23,6 @@ var fib2 = function(n){
 var fib3 = function(n){
     if (n <= 1){
         return n;
-
     }
     return fib3(n-1) + fib3(n-2)
 }

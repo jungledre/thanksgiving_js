@@ -1,6 +1,8 @@
 $(function(){
 
     console.log('The dom is ready! (drill 4)');
+
+
     // $('div#first').hide()
     // $('div#first ul.first').hide()
     // $('div#first ul.second').hide()
@@ -20,6 +22,9 @@ $(function(){
     // $('li').click(function() { $(this).delay(3000).fadeOut() })
 
     //BONUS
+    // $('#second>ul>li').on('click', function(){
+    //     $(this).find('ul').slideToggle();
+    // })
 
 });
 
