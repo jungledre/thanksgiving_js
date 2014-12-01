@@ -1,5 +1,6 @@
 $(function(){
 
+    // $('.shape').mouseenter(removeBall).mouseleave(addBall)
 
 
 
@@ -9,13 +10,18 @@ $(function(){
     shuffleShapes();
     //shuffle shapes on click of shuffle button
     $('#shuffleThem').on('click',shuffleShapes);
-
+    $('doIt').on('click', )
 });
 
 
+var findAll = function(){
+    if {
+       $('#whoDo option:square')
+    }
+}
 
+var
 
-//used to shuffle shapes
 var shuffleShapes = function(){
     //loop through each shape (this is jQuery's each not to be confused with Array.forEach())
     $('.shape').each(function(idx){

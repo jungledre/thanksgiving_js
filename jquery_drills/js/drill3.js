@@ -1,7 +1,5 @@
 $(function(){
 
-//BROKEN
-
     console.log('The dom is ready! (drill 3)');
 
     var colors = ['red','blue','green','orange','purple','yellow','teal'];
